@@ -53,6 +53,15 @@ res.render('home.hbs', {
 
 });
 
+app.get('/projects', (req, res) => {
+
+res.render('projects.hbs', {
+  pageTitle: 'Projects Page',
+  welcomeMessage: 'This is my projects page'
+});
+
+});
+
 app.get('/about', (req, res) => {
   //res.send('About Page')
   res.render('about.hbs', {
